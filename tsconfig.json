@@ -1,0 +1,51 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+
+    "paths": {
+      "@plugins/*": ["src/plugins/*"],
+      "@lib/*": ["src/lib/*"],
+      "@app/*": ["src/app/*"]
+    },
+
+		"allowSyntheticDefaultImports": true,
+		"baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "Node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+    "noEmit": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "ES2021"
+    ],
+		"typeRoots": [
+			"./src/lib/types",
+			"./node_modules/@types"
+		],
+		"allowJs": true,
+		"esModuleInterop": true,
+    "skipLibCheck": true,
+		"jsx": "react-jsx",
+		"jsxImportSource": "react"
+  },
+	"include": [
+    "./src//*.ts",
+    "./src//*.tsx",
+    "src/lib/types/*.d.ts",
+		"src/app/App.test.tsx",
+		"src/app/App.tsx"
+	]
+}
