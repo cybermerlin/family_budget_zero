@@ -32,12 +32,12 @@ export const stringOfLength = <Min extends number, Max extends number>(
 };
 //#endregion
 
-export function random() {
+export function random(): number {
   return parseInt(crypto.getRandomValues(new Uint32Array(2)).toString().replace(',', ''));
 }
 
-export function shortId(): StringOfLength<9, 9> {
-  return <StringOfLength<9, 9>>`_${random().toString(36)}`;
+export function shortId(): StringOfLength<8, 8> {
+  return <StringOfLength<9, 9>>`_${random().toString(36).slice(0, 7)}`;
 }
 
 export function randomColor() {

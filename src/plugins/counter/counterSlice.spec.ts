@@ -1,5 +1,5 @@
 import counterReducer, {
-  CounterState,
+  ICounterState,
   increment,
   decrement,
   incrementByAmount
@@ -7,10 +7,11 @@ import counterReducer, {
 
 
 describe('counter reducer', () => {
-  const initialState: CounterState = {
+  const initialState: ICounterState = {
     value: 3,
     status: 'idle'
   };
+
   it('should handle initial state', () => {
     expect(counterReducer(undefined, { type: 'unknown' })).toEqual({
       value: 0,
