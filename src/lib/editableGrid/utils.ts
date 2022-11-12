@@ -54,7 +54,7 @@ export function makeData(count) {
       firstName: faker.name.firstName(),
       lastName: faker.name.lastName(),
       email: faker.internet.email(),
-      age: Math.floor(20 + Math.random() * 20),
+      age: Math.floor(20 + random() * 20),
       music: faker.music.genre()
     };
     options.push({ label: row.music, backgroundColor: randomColor() });
