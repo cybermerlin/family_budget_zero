@@ -25,7 +25,7 @@ jobs:
       - name: Test
         run: |
           npm i
-          npm run build
+          npm run prod
           npm test
           npm run coverage
 
@@ -34,7 +34,7 @@ jobs:
       # - name: Run tests on Docker
       #   run: |
       #     docker run -t -v $PWD:/srv -w /srv local \
-      #       npm install && npm run build && npm run test
+      #       npm install && npm run prod && npm run test
 
       - name: 'Dependency Review'
         uses: actions/dependency-review-action@v2

@@ -30,7 +30,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "CI=false && react-scripts build",
+    "prod": "CI=false && react-scripts build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "coverage": "react-scripts test --coverage",
     "lint": "eslint -c .eslintrc.js ./src",
