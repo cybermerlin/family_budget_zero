@@ -5,9 +5,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Available Scripts
+<details>
+<summary>In the project directory, you can run:</summary>
 
 ### `npm start`
 
@@ -44,7 +45,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ### npm run storybook
 
-To start on localhost:6000 a server with a storybook project - list of ui components with a documentation and some user case scenarios.
+To start on localhost:6006 a server with a storybook project - list of ui components with a documentation and some user case scenarios.
 
 
 ## For beginners: how to start a project
@@ -65,6 +66,7 @@ Run only the necessary commands.
 ```npm start``` 
 
 And then open the browser and enter the address that the system will write in the console.
+</details>
 
 
 ## Documentaions
