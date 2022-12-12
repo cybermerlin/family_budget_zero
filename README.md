@@ -1,5 +1,5 @@
 [![Develop health](https://github.com/cybermerlin/family_budget/actions/workflows/review.yml/badge.svg?branch=develop)](https://github.com/cybermerlin/family_budget/actions/workflows/review.yml)
-[![Coverage Status](https://coveralls.io/repos/github/dm-rybalchenko/family_budget/badge.svg?branch=develop)](https://coveralls.io/github/cybermerlin/family_budget?branch=develop)
+[![Coverage Status](https://coveralls.io/repos/github/cybermerlin/family_budget/badge.svg?branch=develop)](https://coveralls.io/github/cybermerlin/family_budget?branch=develop)
 
 
 # Getting Started with Create React App
