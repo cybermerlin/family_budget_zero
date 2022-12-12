@@ -19,13 +19,6 @@ jobs:
           - 1
           - 2
     steps:
-      - name: Coveralls Parallel
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.github_token }}
-          flag-name: run-${{ matrix.test_number }}
-          parallel: true
-
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
 
@@ -40,6 +33,13 @@ jobs:
           npm run prod
           npm test
           npm run coverage
+
+      - name: Coveralls Parallel
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.github_token }}
+          flag-name: run-${{ matrix.test_number }}
+          parallel: true
 
       - name: Analyze with SonarCloud
         uses: SonarSource/sonarcloud-github-action@v1.8
